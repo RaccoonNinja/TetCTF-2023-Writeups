@@ -145,8 +145,8 @@ app.post('/api/getImage', isAdmin, validate, async (req, res, next) => {
     - ~~CVE-2021-3664~~ parsed host is empty
     - ~~CVE-2021-27515~~ parsed host is empty
     - ~~CVE-2020-8124~~ *this is why the service maker implemented the WAF but finally gave up and used Python (I love the little story)*
-    - **CVE-2018-3774** `https://<mydomain>\\@i.ibb.co` *(I missed this initially and only saw %5c, which produces invalid URL, kudos for admin's reassurance)*
-    - *Post solve reflection: I should have given up rewriting the protofol earlier from the vulnerabilities alone, there is also another good clue in the next part*
+    - **CVE-2018-3774** `https://<mydomain>\@i.ibb.co` *(I missed this initially and only saw %5c, which produces invalid URL, kudos for admin's reassurance)*
+    - *Post solve reflection: I should have given up rewriting the protocol earlier from the vulnerabilities alone, there is also another good clue in the next part*
 
 ### Python file retrieval logic
 ```py
